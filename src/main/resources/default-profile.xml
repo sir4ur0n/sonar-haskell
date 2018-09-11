@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<profile>
+  <name>Sonar way</name>
+  <language>haskell</language>
+  <rules>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Avoid lambda</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Avoid reverse</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Eta reduce</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Evaluate</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Functor law</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Length always non-negative</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Monad law, left identity</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Monad law, right identity</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant $</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant /=</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant ==</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant bracket</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant do</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant flip</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant if</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant list_comprehension</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Redundant pair</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use &amp;&amp;&amp;</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use ***</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use .</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use :</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use &lt;**&gt;</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use &lt;=&lt;</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use =&lt;&lt;</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use &gt;=&gt;</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use &gt;&gt;=</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use Foldable.forM_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use all</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use and</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use any</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use ap</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use asum</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use break</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use catMayBes</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use catchJust</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use concat</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use concatMap</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use const</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use curry</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use delete</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use dropWhile</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use elem</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use elemIndex</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use elemIndices</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use error</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use evalState</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use exitSuccess</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use first</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use floor</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use fmap</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use foldl</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use foldl1</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use foldr</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use foldr1</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use for</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use forM</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use forM_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use for_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use forever</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use fromMayBe</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use fst</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use getChar</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use getContents</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use getLine</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use group</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use guards</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use hPrint</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use hReady</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use handle</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use handleJust</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use head</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use id</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use infix</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use init</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use insert</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use intercalate</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use intersect</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isAlpha</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isAsciiLower</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isAsciiUpper</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isDigit</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isEOF</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isJust</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isNothing</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isOctDigit</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use isSuffixOf</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use join</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use last</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use lefts</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use liftM</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use list literal</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use list literal pattern</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use list_comprehension</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use map</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use map once</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use mapAndUnzipM</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use mapM</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use mapM_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use mapMayBe</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use maximum</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use maximumBy</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use minimum</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use minimumBy</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use mkWeakPair</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use mkWeakPtr</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use nestedAtomically</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use nonTermination</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use notElem</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use nub</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use null</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use on</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use optional</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use or</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use print</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use product</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use putChar</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use putStr</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use putStrLn</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use reads</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use repeat</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use replicate</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use replicateM</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use replicateM_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use rights</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use second</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use section</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use sequenceA_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use sequence_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use show</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use showHex</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use showOct</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use shows</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use snd</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use sort</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use span</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use sqrt</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use sum</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use takeWhile</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use uncurry</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use union</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use unless</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use unlines</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use unwords</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use void</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use when</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use withBinaryFile</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use withFile</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use zip</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use zip3</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use zipWith</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use zipWithM</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use zipWithM_</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Used otherwise as a pattern</key>
+      <priority>MINOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Unused LANGUAGE pragma</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>Use import/export shortcut</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Move brackets to avoid $</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use fewer imports</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use ++</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use better pragmas</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Reduce duplication</key>
+      <priority>MAJOR</priority>
+    </rule>
+    <rule>
+      <repositoryKey>haskell-haskelllint</repositoryKey>
+      <key>hlint:Use &lt;$&gt;</key>
+      <priority>MAJOR</priority>
+    </rule>
+  </rules>
+</profile>
