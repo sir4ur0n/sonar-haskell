@@ -26,15 +26,13 @@ public class HaskellQualityProfile extends ProfileDefinition {
 
   @Override
   public RulesProfile createProfile(ValidationMessages validation) {
-    LOGGER.info("Haskelllint Quality profile");
+    LOGGER.info("Haskell profile loading...");
 
     RulesProfile profile = RulesProfile.create(PROFILE_NAME, "haskell");
     profile.setDefaultProfile(Boolean.TRUE);
 
     RulesProfile checks = annotationProfileParser.parse("haskell-haskelllint",
         "haskell-HaskellLint", "haskell", emptyList(), validation);
-
-    LOGGER.info(checks.getActiveRules().toString());
 
     RulesProfile dialyzer = xmlProfileParser.parseResource(getClass().getClassLoader(),
         "default-profile.xml", validation);
@@ -44,7 +42,7 @@ public class HaskellQualityProfile extends ProfileDefinition {
 
     profile.setActiveRules(rules.toJavaList());
 
-    LOGGER.info("Profile generated: " + profile.getActiveRules());
+    LOGGER.info("Haskell profile loaded with rules: " + profile.getActiveRules());
     return profile;
   }
 
