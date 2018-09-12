@@ -28,7 +28,7 @@ class SonarHaskellPluginTest {
 
     cut.define(context);
 
-    assertThat(context.getExtensions()).hasSize(6);
+    assertThat(context.getExtensions()).hasSize(5);
   }
 
 }
