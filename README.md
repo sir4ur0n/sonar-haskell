@@ -59,7 +59,7 @@ mvn clean install
 docker container run \
 --name=sonarqube \
 -p 9000:9000 \
--v $(pwd)/target/sonar-haskell-plugin-1.0-SNAPSHOT.jar:/opt/sonarqube/extensions/plugins/sonar-haskell-plugin-1.0-SNAPSHOT.jar \
+-v $(pwd)/target/sonar-haskell-plugin-1.0.jar:/opt/sonarqube/extensions/plugins/sonar-haskell-plugin-1.0.jar \
 sonarqube
 # Run analysis on Haskell project
 docker container run \
@@ -79,7 +79,7 @@ Since a Sonar plugin is composed of 3 pieces (Server, Compute Engine and Scanner
 docker container run \
 --name=sonarqube \
 -p 9000:9000 -p 5005:5005 -p 5006:5006 \
--v $(pwd)/target/sonar-haskell-plugin-1.0-SNAPSHOT.jar:/opt/sonarqube/extensions/plugins/sonar-haskell-plugin-1.0-SNAPSHOT.jar \
+-v $(pwd)/target/sonar-haskell-plugin-1.0.jar:/opt/sonarqube/extensions/plugins/sonar-haskell-plugin-1.0.jar \
 sonarqube:7.1 \
 -Dsonar.web.javaAdditionalOpts=-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005 \
 -Dsonar.ce.javaAdditionalOpts=-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5006
